@@ -18,7 +18,7 @@ public class PalindromeDemo {
     public static void main(String[] args) {
         String input = "mom";
         StringBuffer stringBuffer = new StringBuffer(input);
-        boolean isPalindrome = input.equals(stringBuffer.reverse().toString());
+        boolean isPalindrome = input.contentEquals(stringBuffer.reverse());
         System.out.printf("Is the given String %s is a palindrome or not ? : %b%n", input, isPalindrome);
         String textBlock = """
                 """;
